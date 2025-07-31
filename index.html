@@ -12,6 +12,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		.centered-image {
+		  display: flex;
+		  justify-content: center;   /* horizontal center */
+		  align-items: center;       /* vertical center if you give the wrapper a height */
+		  padding: 0.5rem 0;
+		}
+	  
+		.centered-image img {
+		  display: block;
+		  max-width: 320px;          /* adjust to taste: 280–420px */
+		  width: 100%;
+		  height: auto;
+		  border: 5px solid black;
+		  /* border-radius: 50%;      uncomment for round avatar */
+		}
+
+		/* single value to keep all vertical gaps consistent */
+		:root {
+		--block-gap: 2.25rem; /* adjust number until it looks right */
+		}
+
+		/* space between the headline and the photo, and between the photo and the button */
+		.centered-image {
+		margin-top: var(--block-gap);
+		margin-bottom: var(--block-gap);
+		}
+
+		.post.featured .actions.special {
+		margin-top: 0; 
+		}
+
+	  </style>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -53,29 +87,14 @@
 								<header class="major">
 									<h2><a href="#">About<br />
 									Me</a></h2>
-									<p> Rutgers University Graduate | Double major in CS and Business Analytics </p>
+									<p> Rutgers University Graduate | Dual Degree in CS and Business Analytics </p>
 								</header>
-								<style>
-									/* Inline CSS styles */
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 450px; /* desired height for centered image */
-									}
-							
-									.centered-image img {
-										max-width: 70%; /* Ensure the image doesn't exceed its container */
-										max-height: 70%; /* Ensure the image doesn't exceed its container */
-									}
-								</style>
+								  
 								<div class="centered-image">
-									<p style="text-align:center;">
-										<div style = "position:relative; left:85px; top:0px;">
-											</p><a href="portrait.JPG" class="image main"><img src="portrait.JPG" alt="Sejal's picture" style="border: 5px solid black;"/></a>
-										</div>
-									</p>
-								</div>
+									<img src="profilepic.png" alt="Sejal's picture" />
+								  </div>
+								  
+								  
 								<ul class="actions special">
 									<li><a href="https://www.linkedin.com/in/sejal-kunigiri/" class="button large">LinkedIn</a></li>
 								</ul>
